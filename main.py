@@ -10,7 +10,7 @@ import numpy as np
 import warnings
 from datetime import datetime
 import time
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 import streamlit as st
 import plotly.express as px
@@ -358,11 +358,11 @@ while True:
             fig = px.scatter(df_flask, x=df_flask["timestamp"], y=df_flask["RSSI"], color=df_flask["prediction"], color_discrete_map={"crossing" :"red","no_crossing":"blue"})
             # print(df_flask)
 
-            two_subplot_fig = plt.figure(figsize=(30,30))
-            plt.subplot(422)
-            plt.xlabel('Temps')
-            plt.ylabel('Prediction')
-            plt.title('Signal carré')
+            # two_subplot_fig = plt.figure(figsize=(30,30))
+            # plt.subplot(422)
+            # plt.xlabel('Temps')
+            # plt.ylabel('Prediction')
+            # plt.title('Signal carré')
 
 
             i=0
@@ -391,9 +391,9 @@ while True:
                 taille=taille-1
 
 
-                plt.plot(x, y, color='black', linestyle='--')
+                # plt.plot(x, y, color='black', linestyle='--')
                 # add vertical line
-                plt.vlines(x=x_array, ymin="no_crossing", ymax="crossing", colors='black', ls='--')
+                # plt.vlines(x=x_array, ymin="no_crossing", ymax="crossing", colors='black', ls='--')
 
                 #time.sleep(0.1)
 
